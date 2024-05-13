@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kilifi County Climate  Portal</title>
+
+<style>
+
+/* CSS styles */
+
+body {
+
+font-family: Arial, sans-serif;
+
+margin: 0;
+
+padding: 0;
+
+background-color: #f0f0f0;
+
+overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+
+header {
+
+background-color: #007bff;
+
+color: #fff;
+
+padding: 20px;
+
+text-align: center;
+
+}
+
+nav ul {
+
+list-style-type: none;
+
+padding: 0;
+
+}
+
+nav ul li {
+
+display: inline;
+
+margin-right: 20px;
+
+}
+
+nav ul li a {
+
+color: #fff;
+
+text-decoration: none;
+
+}
+
+main {
+
+padding: 20px;
+
+}
+
+section {
+
+margin-bottom: 30px;
+
+}
+
+section h2 {
+
+color: #007bff;
+
+}
+
+section img {
+
+max-width: 100%;
+
+height: auto;
+
+display: block;
+
+margin: 0 auto 20px;
+
+}
+
+footer {
+
+background-color: #007bff;
+
+color: #fff;
+
+text-align: center;
+
+padding: 10px 0;
+
+position: fixed;
+
+bottom: 0;
+
+width: 100%;
+
+}
+
+.chat-box {
+
+max-height: 300px;
+
+overflow-y: auto;
+
+border: 1px solid #ccc;
+
+padding: 10px;
+
+margin-bottom: 20px;
+
+}
+
+.message {
+
+margin-bottom: 10px;
+
+}
+
+.message p {
+
+background-color: #f9f9f9;
+
+padding: 10px;
+
+border-radius: 5px;
+
+}
+
+.message-form {
+
+display: flex;
+
+}
+
+.message-form input {
+
+flex: 1;
+
+padding: 10px;
+
+border: 1px solid #ccc;
+
+border-radius: 5px;
+
+margin-right: 10px;
+
+}
+
+.message-form button {
+
+padding: 10px 20px;
+
+background-color: #007bff;
+
+color: #fff;
+
+border: none;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+}
+
+.message-form button:hover {
+
+background-color: #0056b3;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Kilifi County Climate Portal</h1>
+
+<nav>
+
+<ul>
+
+<li><a href="#climate-education">Climate education</a></li>
+
+<li><a href="#climate-dashboard">Climate Change Dashboard</a></li>
+
+<li><a href="#impact-stories">Impact Stories</a></li>
+
+
+
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<section id="introduction">
+
+
+
+<img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn8bJx0vugWFwXPnE7pO4JKN_1Tl6zbyH31_vBx2_6WgLgUGbS5zz2gJrI&s=10" alt="Description of the image">
+
+
+
+
+
+<h2>kilifi County</h2>
+
+<p>Kilifi County is located on the coast of Kenya and is known for its beautiful beaches, vibrant culture, and rich biodiversity. The county is led by Governor Mung'aro, who is dedicated to promoting sustainable development and addressing climate change challenges. Moses Karema serves as the director of ICT in Kilifi County, overseeing technological initiatives to enhance education and communication.</p>
+
+<img src=" https://pbs.twimg.com/media/GNDu6D-XUAIprFq?format=jpg&name=large" alt="Description of the image">
+
+
+
+</section>
+
+<section id="climate-education">
+
+<h2>Climate Education </h2>
+
+<p>we provide accessible information on the science of climate change and its impacts on kilifi county coastal regions,now that we came to understand that the locals mostly in kilifi county don't have much knowledge on climate education.
+
+Click on this link to learn more about climate education in kilifi county. <a href=" https://www.the-star.co.ke/news/2024-04-20-kilifi-communities-trained-on-climate-change-mitigation/">Learn more here.</a></p>
+
+</section>
+
+<section id="climate-dashboard/weather forecast">
+
+<h2>Climate Change Dashboard/weather forecast</h2>
+
+<p>we will as well Include real-time or regularly updated information on temperature trends, sea level rise, extreme weather events, and other relevant indicators.
+
+<a href=" https://www.theweathernetwork.com/en/city/ke/kilifi/kilifi/14-days">Check the 14-day weather forecast for Kilifi County here.</a>
+
+</p>
+
+</section>
+  
+  
+   <section id="impact-stories">
+    <h2>Impact Stories</h2>
+    <p>This is a Platform for locals to share personal stories, ask questions or share ideas, feel free to interact</p>
+   
+
+
+    <!-- Embedded Java Chat Room Code -->
+    <div class="container">
+        <div class="chat-box" id="chatBox">
+            <!-- Messages will be displayed here -->
+        </div>
+        <input type="text" class="input-field" id="messageInput" placeholder="Type your message...">
+        <button class="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var messageInput = document.getElementById('messageInput');
+            var message = messageInput.value;
+            if (message.trim() !== '') {
+                var chatBox = document.getElementById('chatBox');
+                var messageDiv = document.createElement('div');
+                messageDiv.className = 'message';
+                messageDiv.innerHTML = '<p>' + message + '</p>';
+                chatBox.appendChild(messageDiv);
+                messageInput.value = '';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+</section>
+</style>
+     
+
+<section id="about">
+    <h2>About the Founder</h2>
+    <p>Hi, I'm Sir Fredrick Kazungu, the founder of the Kilifi County Climate Education Portal. I established this website on May 10th, 2024, with the aim of providing accessible information and resources on climate change education to the residents of Kilifi County and beyond.</p>
+    <p>As a passionate advocate for environmental conservation and sustainable development, I believe that educating communities about climate change is crucial for building resilience and promoting positive environmental action.</p>
+    <p>Thank you for visiting our portal, and I hope you find the resources here informative and inspiring.</p>
+</section>
+     
+     
+    </script>
+</section>
+  <p>power plan project</p>
+
+</main>
+
+<footer>
+
+<p>&copy; 2024 Kilifi County Climate Education Portal</p>
+
+</footer>
+Add css embedded with java styles on the html code above to make it's back ground black in color 
